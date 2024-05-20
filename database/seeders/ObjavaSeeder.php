@@ -17,6 +17,7 @@ class ObjavaSeeder extends Seeder
             'priimek' => 'Šinkar',
             'lokacija' => 'Ljubljana',
             'opis' => 'Potrebujem pomoč pri osebni negi in vsakodnevnih opravilih. Rada hodim na koncerte in rada imam živali. Imam psa spremljevalca, s katerim se veliko sprehajam po naravi.',
+            'slika' => '\build\assets\petra.jpg',
             'user_id' => 1,
         ]);
 

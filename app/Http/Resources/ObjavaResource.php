@@ -20,6 +20,7 @@ class ObjavaResource extends JsonResource
             'priimek' => $this->priimek,
             'lokacija' => $this->lokacija,
             'opis' => $this->opis,
+            'slika' => $this->slika,
             'user_id' => $this->user_id,
    ];
     }

@@ -63,40 +63,40 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         <Link
                                             href={route("objava.index")}
                                             style={{
-                                                padding: "40px",
+                                                padding: "35px",
                                                 fontSize: "20px",
                                             }}
-                                            className=" mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-10  rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                            className=" mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-5  rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                         >
                                             IŠČEM ASISTENCO
                                         </Link>
                                         <Link
                                             href={route("objava.index")}
                                             style={{
-                                                padding: "40px",
+                                                padding: "35px",
                                                 fontSize: "20px",
                                             }}
-                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-10  mb-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-5  mb-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                         >
                                             NUDIM ASISTENCO
                                         </Link>
                                         <Link
                                             href={route("objava.index")}
                                             style={{
-                                                padding: "40px",
+                                                padding: "35px",
                                                 fontSize: "20px",
                                             }}
-                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-5 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                         >
                                             IŠČEM NADOMEŠČANJE
                                         </Link>
                                         <Link
                                             href={route("objava.index")}
                                             style={{
-                                                padding: "40px",
+                                                padding: "35px",
                                                 fontSize: "20px",
                                             }}
-                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-10 mb-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-5 mb-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                         >
                                             NUDIM NADOMEŠČANJE
                                         </Link>
@@ -106,40 +106,40 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                                         <Link
                                             href={route("login")}
                                             style={{
-                                                padding: "40px",
+                                                padding: "35px",
                                                 fontSize: "20px",
                                             }}
-                                            className=" mx-auto shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                            className=" mx-auto shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-5 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                         >
                                             IŠČEM ASISTENCO
                                         </Link>
                                         <Link
                                             href={route("login")}
                                             style={{
-                                                padding: "40px",
+                                                padding: "35px",
                                                 fontSize: "20px",
                                             }}
-                                            className=" mx-auto shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-10 mb-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                            className=" mx-auto shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-5 mb-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                         >
                                             NUDIM ASISTENCO
                                         </Link>
                                         <Link
                                             href={route("objava.index")}
                                             style={{
-                                                padding: "40px",
+                                                padding: "35px",
                                                 fontSize: "20px",
                                             }}
-                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-5 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                         >
                                             IŠČEM NADOMEŠČANJE
                                         </Link>
                                         <Link
                                             href={route("objava.index")}
                                             style={{
-                                                padding: "40px",
+                                                padding: "35px",
                                                 fontSize: "20px",
                                             }}
-                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-10 mb-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                            className="mx-auto  shadow-[0px_14px_34px_0px_rgba(0,0,0,0.1)] bg-white text-xl font-semibold border-2 border-gray-400 mt-5 mb-10 rounded-full px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                         >
                                             NUDIM NADOMEŠČANJE
                                         </Link>
