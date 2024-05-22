@@ -25,6 +25,26 @@ export default function Index({ auth, objavas }) {
             <Head title="Objave" />
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <div className="flex justify-between">
+                        <>
+                            <div className="p-10 pt-5 text-gray-900 text-m text-center">
+                                <Link
+                                    className="bg-white hover:bg-gray-100 rounded-full border-2 border-gray-400 p-5"
+                                    href="/"
+                                >
+                                    Nazaj na prvo stran.
+                                </Link>
+                            </div>
+                            <div className=" p-10 pt-5  text-gray-900 text-m text-center">
+                                <Link
+                                    className=" bg-white hover:bg-gray-100 rounded-full  border-2 border-gray-400 p-5"
+                                    href={route("objava.create")}
+                                >
+                                    + DODAJ OBJAVO
+                                </Link>
+                            </div>
+                        </>
+                    </div>
                     <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div className="p-6 text-gray-900 grid gap-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                             {objavas.data.map((objava) => (
@@ -33,7 +53,7 @@ export default function Index({ auth, objavas }) {
                                     className=" bg-white shadow-md rounded-lg overflow-hidden"
                                 >
                                     <img
-                                        className="m-auto h-full h-56 object-cover"
+                                        className="m-auto  h-56 object-cover"
                                         src={objava.slika}
                                         alt="fotografija"
                                     />
@@ -45,13 +65,32 @@ export default function Index({ auth, objavas }) {
                                             <strong>Lokacija:</strong>{" "}
                                             {objava.lokacija}
                                         </p>
-                                        <p className="text-gray-700 mb-2">
-                                            {objava.opis}
-                                        </p>
-
+                                        {expandedObjavas.includes(objava.id) ? (
+                                            <p className="text-gray-700 mb-2">
+                                                {objava.opis}
+                                            </p>
+                                        ) : (
+                                            <>
+                                                <p
+                                                    className="text-gray-700 mb-2"
+                                                    style={{
+                                                        maxHeight: "5.6em",
+                                                        overflow: "hidden",
+                                                        textOverflow:
+                                                            "ellipsis",
+                                                        display: "-webkit-box",
+                                                        WebkitBoxOrient:
+                                                            "vertical",
+                                                        WebkitLineClamp: 4,
+                                                    }}
+                                                >
+                                                    {objava.opis}
+                                                </p>
+                                            </>
+                                        )}
                                         <div className="flex justify-end">
                                             <button
-                                                className="font-medium text-blue-600 dark:text-blue-500 hover:underline mx-1"
+                                                className="font-medium  text-blue-600 dark:text-blue-500 hover:underline mx-1"
                                                 onClick={() =>
                                                     toggleExpanded(objava.id)
                                                 }
@@ -68,36 +107,30 @@ export default function Index({ auth, objavas }) {
                                         ) && (
                                             <div>
                                                 <p className="text-gray-700">
-                                                    <strong>Tel. št.:</strong>
-                                                    {objava.kontakt}
+                                                    <strong>Tel. št.: </strong>
+                                                    {objava.telefonska}
                                                 </p>
                                                 <p className="text-gray-700">
-                                                    <strong>E-pošta:</strong>
-                                                    {objava.kontakt}
+                                                    <strong>E-pošta: </strong>
+                                                    {objava.eposta}
                                                 </p>
                                                 <p className="text-gray-700">
-                                                    <strong>Starost:</strong>{" "}
-                                                    {objava.starost}
+                                                    <strong>Starost: </strong>
+                                                    {objava.datum_rojstva}
                                                 </p>
                                                 <p className="text-gray-700">
                                                     <strong>
-                                                        Delovni čas:
-                                                    </strong>{" "}
-                                                    {objava.delovni_cas}
+                                                        Delovni čas:{" "}
+                                                    </strong>
+                                                    {objava.delovni_cas +
+                                                        " / " +
+                                                        objava.delovni_cas2}
                                                 </p>
                                             </div>
                                         )}
                                     </div>
                                 </div>
                             ))}
-                        </div>
-                        <div className="p-10 text-gray-900 text-m text-center">
-                            <Link
-                                className="rounded-full border-2 border-gray-400 p-5"
-                                href="/"
-                            >
-                                Nazaj na prvo stran.
-                            </Link>
                         </div>
                     </div>
                 </div>

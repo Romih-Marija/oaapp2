@@ -14,7 +14,7 @@ export default function Dashboard({ auth }) {
                         </div>
                         <div className="p-10 text-gray-900 text-m text-center">
                             <Link
-                                className=" rounded-full border-2 border-gray-400 p-5"
+                                className=" bg-white hover:bg-gray-100 rounded-full border-2 border-gray-400 p-5"
                                 href="/"
                             >
                                 Nazaj na prvo stran.

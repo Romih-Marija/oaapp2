@@ -14,12 +14,18 @@ class ObjavaResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+        $starost = now()->diff($this->datum_rojstva)->y;
         return [   
             'id' => $this->id,
             'ime' => $this->ime,
             'priimek' => $this->priimek,
             'lokacija' => $this->lokacija,
             'opis' => $this->opis,
+            'telefonska' => $this -> telefonska,
+            'eposta' => $this -> eposta,
+            'delovni_cas' => $this -> delovni_cas,
+            'delovni_cas2' => $this -> delovni_cas2,
+            'datum_rojstva' =>$starost,
             'slika' => $this->slika,
             'user_id' => $this->user_id,
    ];

@@ -9,7 +9,17 @@ use Illuminate\Database\Eloquent\Model;
 class Objava extends Model
 {
     use HasFactory;
-    protected $fillable = ['ime', 'priimek', 'lokacija', 'opis', 'user_id'];
+    protected $fillable = [ 
+    'ime',
+    'priimek',
+    'opis',
+    'lokacija',
+    'telefonska',
+    'eposta',
+    'datum_rojstva',
+    'delovni_cas',
+    'delovni_cas2',
+    'user_id'];
 
     public function user()
     {

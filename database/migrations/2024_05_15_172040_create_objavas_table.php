@@ -18,6 +18,11 @@ return new class extends Migration
             $table->string('lokacija');
             $table->text('opis')->nullable();
             $table->string('slika')->nullable();
+            $table->string('telefonska')->nullable();
+            $table->string('eposta')->nullable();
+            $table->string('delovni_cas');
+            $table->string('delovni_cas2');
+            $table->date('datum_rojstva')->nullable();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });

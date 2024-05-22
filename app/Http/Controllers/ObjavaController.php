@@ -13,7 +13,7 @@ class ObjavaController extends Controller
     public function index()
     {     
         $query = Objava::query();
-        $objavas = $query->paginate(10);
+        $objavas = $query->orderBy('created_at', 'desc')->paginate(10);
         return Inertia("Objava/Index", [
             "objavas" => ObjavaResource::collection($objavas),
         ]);
@@ -28,21 +28,33 @@ class ObjavaController extends Controller
                 'ime' => 'required|max:255',
                 'priimek' => 'required|max:255',
                 'opis' => 'nullable',
-                'user_id' => 'required|exists:users,id'
+                'lokacija' => 'max:255',
+                'telefonska' => 'nullable|max:255',
+                'eposta' => 'nullable|email|max:255',
+                'datum_rojstva' => 'nullable|date',
+                'delovni_cas' => 'required',
+                'delovni_cas2' => 'required',
+                'slika' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:4048',
+                'user_id' => 'exists:users,id'
             ]);
+            
 
             // Create a new task with the validated data
             Objava::create($validatedData);
 
-            return to_route('objave.index');
+            return to_route('objava.index');
         } catch (\Illuminate\Validation\ValidationException $e) {
             return to_route(
-                'objave.index',
+                'objava.index',
                 [
                     'message' => 'Objava not created'
                 ]
             );
         }
+    }
+    public function create() { 
+        
+         return Inertia::render('Objava/Create');
     }
 
     // Update the specified task
